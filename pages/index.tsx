@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import type { NextPage } from 'next';
 import Head from 'next/head';
 import Image from 'next/image';
@@ -28,10 +29,9 @@ const Home: NextPage = () => {
         </h4>
 
         <div className={styles.grid}>
-          <a href="mailto:dovlat93@gmail.com" className={styles.card}>
-            <h2>
-              Contact Us <FaEnvelope />
-            </h2>
+          <a href="#" className={styles.card}>
+            <FaEnvelope className={styles.icon} />
+            <h2>Contact Us</h2>
             <p>Send your inquiries via email.</p>
           </a>
         </div>
