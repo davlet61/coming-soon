@@ -3,6 +3,7 @@ import Head from 'next/head';
 import Image from 'next/image';
 import { FaEnvelope } from 'react-icons/fa';
 import styles from '../styles/Home.module.css';
+import code from '../public/code.gif';
 
 const Home: NextPage = () => {
   return (
@@ -21,7 +22,7 @@ const Home: NextPage = () => {
         <p className={styles.description}>
           We are currently under development &#128556;{' '}
         </p>
-        <Image src="/code.gif" alt="coding" width={72} height={36} />
+        <Image src={code} alt="coding" width={72} height={36} />
 
         <h4 className={styles.messsage}>
           But not to worry! We will be back online very shortly!
